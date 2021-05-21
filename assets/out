@@ -121,7 +121,7 @@ tag() {
 }
 
 push_src_and_tags() {
-  git push --tags push-target HEAD:refs/heads/$branch $forceflag
+  git push --tags --set-upstream push-target HEAD:refs/heads/$branch $forceflag
 }
 
 push_tags() {
